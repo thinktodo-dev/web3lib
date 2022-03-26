@@ -1,4 +1,4 @@
-part of 'package:web3dart/web3dart.dart';
+part of 'package:web3lib/web3lib.dart';
 
 /// Signature for a function that opens a socket on which json-rpc operations
 /// can be performed.
@@ -7,7 +7,7 @@ part of 'package:web3dart/web3dart.dart';
 /// pub is suitable to create websockets. An implementation using that library
 /// could look like this:
 /// ```dart
-/// import "package:web3dart/web3dart.dart";
+/// import "package:web3lib/web3lib.dart";
 /// import "package:web_socket_channel/io.dart";
 ///
 /// final client = Web3Client(rpcUrl, Client(), socketConnector: () {
@@ -36,7 +36,7 @@ class Web3Client {
 
   final RpcService _jsonRpc;
 
-  /// Some ethereum nodes support an event channel over websockets. Web3dart
+  /// Some ethereum nodes support an event channel over websockets. web3lib
   /// will use the [StreamChannel] returned by this function as a socket to send
   /// event requests and parse responses. Can be null, in which case a polling
   /// implementation for events will be used.
@@ -423,7 +423,7 @@ class Web3Client {
   /// Listens for new blocks that are added to the chain. The stream will emit
   /// the hexadecimal hash of the block after it has been added.
   ///
-  /// {@template web3dart:filter_streams_behavior}
+  /// {@template web3lib:filter_streams_behavior}
   /// The stream can only be listened to once. The subscription must be disposed
   /// properly when no longer used. Failing to do so causes a memory leak in
   /// your application and uses unnecessary resources on the connected node.
@@ -439,7 +439,7 @@ class Web3Client {
   /// node. The stream will emit the hexadecimal hash of the pending
   /// transaction.
   ///
-  /// {@macro web3dart:filter_streams_behavior}
+  /// {@macro web3lib:filter_streams_behavior}
   /// See also:
   /// - [hexToBytes] and [hexToInt], which can transform hex strings into a byte
   /// or integer representation.
@@ -450,7 +450,7 @@ class Web3Client {
   /// Listens for logs emitted from transactions. The [options] can be used to
   /// apply additional filters.
   ///
-  /// {@macro web3dart:filter_streams_behavior}
+  /// {@macro web3lib:filter_streams_behavior}
   /// See also:
   /// - https://solidity.readthedocs.io/en/develop/contracts.html#events, which
   /// explains more about how events are encoded.

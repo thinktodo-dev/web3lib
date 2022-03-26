@@ -1,10 +1,10 @@
 @JS()
-library web3dart.internal.js.creds;
+library web3lib.internal.js.creds;
 
 import 'dart:typed_data';
 
 import 'package:js/js.dart';
-import 'package:web3dart/web3dart.dart';
+import 'package:web3lib/web3lib.dart';
 
 import '../../crypto.dart';
 

@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:http/http.dart';
 import 'package:test/test.dart';
-import 'package:web3dart/crypto.dart';
-import 'package:web3dart/web3dart.dart';
+import 'package:web3lib/crypto.dart';
+import 'package:web3lib/web3lib.dart';
 
 const _privateKey1 =
     '05decd062bf7f0b8b9026c08624ed4aea1a4f4202f25dec63929c916b6717210';
