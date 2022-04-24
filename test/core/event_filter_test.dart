@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:web3dart/web3dart.dart';
+import 'package:web3lib/web3lib.dart';
 
 import '../mock_client.dart';
 

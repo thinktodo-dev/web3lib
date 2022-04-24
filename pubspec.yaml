@@ -1,8 +1,8 @@
-name: web3dart
-description: Dart library to connect to Ethereum clients. Send transactions and interact with smart contracts!
+name: web3lib
+description: Dart library to connect to Ethereum clients. Send transactions and interact with smart contracts! We folk from https://github.com/xclud/web3dart
 version: 2.3.5
-homepage: https://pwa.ir
-repository: https://github.com/xclud/web3dart
+homepage: https://thinktodo.net
+repository: https://github.com/thinktodo-dev/web3lib
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
